@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fff8e1;
+  --foreground: #333333;
+  --gutten-cream: #fff8e1;
+  --gutten-blue: #c3d5e6;
+  --gutten-dark-blue: #003366;
+  --gutten-green: #a8d5ba;
+  --gutten-text: #333333;
+  --gutten-muted-text: #888888;
+  --gutten-muted: #e6dfc8;
+  --gutten-ring: #6197d1;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Georgia", "Times New Roman", serif;
+}
