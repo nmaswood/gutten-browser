@@ -1,20 +1,12 @@
-import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/Input";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1>Project Gutenberg Explorer</h1>
-        <Input />
-        <Button>Click me</Button>
-        <Button variant="destructive">Click me</Button>
-        <Button variant="outline">Click me</Button>
-        <Button variant="secondary">Click me</Button>
-        <Button variant="ghost">Click me</Button>
-        <Button variant="link">Click me</Button>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
-    </div>
+    <>
+      <h2 className="text-5xl md:text-7xl font-bold text-guttenDarkBlue mb-6 tracking-tight">
+        Project Gutenberg Explorer
+      </h2>
+      <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
+        Project Gutenberg is a library of over 70,000 free eBooks
+      </p>
+    </>
   );
 }

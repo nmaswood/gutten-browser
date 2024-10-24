@@ -16,7 +16,11 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         <Header />
-        {children}
+        <div className="min-h-[calc(100vh-64px)] bg-background">
+          <main className="container mx-auto px-4 py-8 flex flex-col items-center">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
