@@ -17,6 +17,7 @@ const config: Config = {
         guttenGreen: "var(--gutten-green)",
         guttenText: "var(--gutten-text)",
         guttenMutedText: "var(--gutten-muted-text)",
+        guttenMuted: "var(--gutten-muted)",
         guttenRing: "var(--gutten-ring)",
       },
     },
