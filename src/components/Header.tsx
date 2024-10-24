@@ -1,5 +1,4 @@
-import { Input } from "@/components/ui/Input";
-import { Button } from "@/components/ui/Button";
+import { SearchSection } from "@/components/SearchSection";
 
 export function Header() {
   return (
@@ -9,10 +8,7 @@ export function Header() {
       </h1>
 
       <div className="flex-1 lg:absolute lg:inset-0 flex lg:justify-center justify-center md:justify-end items-center">
-        <div className="flex w-full max-w-sm items-center space-x-2">
-          <Input placeholder="Search book ID..." />
-          <Button>Search</Button>
-        </div>
+        <SearchSection />
       </div>
     </header>
   );
