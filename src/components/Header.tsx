@@ -1,4 +1,5 @@
 import { SearchSection } from "@/components/SearchSection";
+import { SeeHistory } from "@/components/SeeHistory";
 
 export function Header() {
   return (
@@ -9,6 +10,7 @@ export function Header() {
 
       <div className="flex-1 lg:absolute lg:inset-0 flex lg:justify-center justify-center md:justify-end items-center">
         <SearchSection />
+        <SeeHistory />
       </div>
     </header>
   );
