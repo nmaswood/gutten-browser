@@ -16,9 +16,6 @@ export function SeeHistory() {
     setSavedBooks(books);
   }, []);
 
-  if (window.localStorage) {
-  }
-
   return (
     <Link href="/history">
       <Button variant="outline" className="ml-2">

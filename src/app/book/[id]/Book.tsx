@@ -1,13 +1,14 @@
 import { getBook } from "@/app/book/[id]/book.service";
+
 import { SaveBookWrapper } from "@/app/book/[id]/SaveBookWrapper";
 import { BookCard } from "@/components/BookCard";
 
 interface Props {
-  id: string;
+  getBook: ReturnType<typeof getBook>;
 }
 
-export default async function Book({ id }: Props) {
-  const book = await getBook(id);
+export default async function Book({ getBook }: Props) {
+  const book = await getBook;
 
   if (!book) {
     return (
