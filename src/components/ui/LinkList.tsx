@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ScrollArea } from "./Scrollable";
 import classNames from "classnames";
 
 interface LinkItem {
@@ -14,33 +13,27 @@ interface LinkListProps {
   maxHeight?: string;
 }
 
-export function LinkList({
-  items,
-  className,
-  maxHeight = "600px",
-}: LinkListProps) {
+export function LinkList({ items }: LinkListProps) {
   return (
-    <ScrollArea className={className} style={{ maxHeight }}>
-      <ul className="p-3 space-y-2">
-        {items.map((item) => (
-          <li key={item.id}>
-            <Link
-              href={item.href}
-              className={classNames(
-                "flex items-center justify-between rounded-md p-4",
-                "hover:bg-guttenBlue active:bg-guttenMuted",
-                "border border-guttenMuted hover:border-guttenDarkBlue"
-              )}
-            >
-              <div className="flex-1">
-                <h3 className="font-medium text-gray-800 group-hover:text-gray-900">
-                  {item.title}
-                </h3>
-              </div>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </ScrollArea>
+    <ul className="p-3 space-y-2">
+      {items.map((item) => (
+        <li key={item.id}>
+          <Link
+            href={item.href}
+            className={classNames(
+              "flex items-center justify-between rounded-md p-4",
+              "hover:bg-guttenBlue active:bg-guttenMuted",
+              "border border-guttenMuted hover:border-guttenDarkBlue"
+            )}
+          >
+            <div className="flex-1">
+              <h3 className="font-medium text-gray-800 group-hover:text-gray-900">
+                {item.title}
+              </h3>
+            </div>
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 }

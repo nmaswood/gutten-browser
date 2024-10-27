@@ -38,8 +38,6 @@ const getLLMAnalysisPrompt = (
     Notes:  
     - Section titles listed above can be customized to fit the book's theme.
     - Use # to indicate titles.
-
-
 `;
 
 export const getLLMAnalysis = async (book: Book) => {
