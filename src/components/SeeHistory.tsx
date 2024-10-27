@@ -4,7 +4,7 @@ import { SAVED_BOOKS_KEY } from "@/lib/contants";
 import { Button } from "./ui/Button";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { BookListItem } from "@/app/history/HistoryList";
+import { BookListItem } from "@/app/history/historyList.types";
 
 export function SeeHistory() {
   const [savedBooks, setSavedBooks] = useState<BookListItem[]>([]);
