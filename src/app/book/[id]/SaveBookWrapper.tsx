@@ -2,8 +2,9 @@
 
 import { useEffect } from "react";
 import { Book } from "@/app/book/[id]/book.types";
-import { BookListItem } from "@/app/history/HistoryList";
+
 import { SAVED_BOOKS_KEY } from "@/lib/contants";
+import { BookListItem } from "@/app/history/historyList.types";
 
 export function SaveBookWrapper({ book }: { book: Book }) {
   useEffect(() => {
