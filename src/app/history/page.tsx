@@ -4,7 +4,7 @@ import { SAVED_BOOKS_KEY } from "@/lib/contants";
 import { useEffect, useState } from "react";
 import { LinkList } from "@/components/ui/LinkList";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
-import { BookListItem } from "@/app/history/HistoryList.types";
+import { BookListItem } from "@/app/history/historyList.types";
 
 export default function History() {
   const [history, setHistory] = useState<BookListItem[]>();
