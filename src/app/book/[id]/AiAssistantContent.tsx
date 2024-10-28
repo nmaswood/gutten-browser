@@ -24,14 +24,14 @@ export default function AiAssistantContent({ book }: Props) {
     <div className="space-y-4 flex flex-col items-center">
       <Button
         variant="outline"
-        className="h-auto flex-col items-start gap-2 p-4 max-w-2xl"
+        className="h-auto flex-col items-start gap-2 p-4 w-full md:max-w-2xl"
         onClick={() => refetch()}
       >
         <div className="flex w-full items-center gap-2">
           <span className="text-xl">📝</span>
           <span className="font-semibold">Historical Context</span>
         </div>
-        <p className="text-sm text-guttenMutedText text-left">
+        <p className="text-sm text-guttenMutedText text-left whitespace-normal break-words hyphens-auto">
           Learn about the historical period, author&apos;s background, and
           cultural significance of this work
         </p>
